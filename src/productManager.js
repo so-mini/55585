@@ -26,7 +26,7 @@ class ProductManager {
 
             const products = await this.getProducts();
             const id = products.length + 1;
-            products.push({ id, title, description, price, thumbnail, code, stock });
+            products.push({ id, title, description, price, thumbnail, code, stock, status: true });
 
             await fs.promises.writeFile(this.filename, JSON.stringify(products));
             return products;
@@ -52,7 +52,7 @@ class ProductManager {
         try {
             if (!fs.existsSync(this.filename)) return;
 
-            const products = await this.getProduct();
+            const products = await this.getProducts();
             const product = products.find((p) => p.id === id);
 
             if (product) {
@@ -61,6 +61,8 @@ class ProductManager {
 
                 return products;
             }
+
+
         } catch (e) {
             return console.error(e);
         }
@@ -94,7 +96,7 @@ async function run() {
     // await productManager.addProduct('Anthurium', 'This is an anthurium.', 15, 'anthurium.jpg', '8A', 50);
     // await productManager.addProduct('Asparagus Fern', 'This is an Asparagus Fern', 20, 'fern.jpg', '9A', 50);
     // await productManager.addProduct('Banana Plant', 'This is a banana plant', 10, 'banana.jpg', '10A', 50);
-
+        
     // console.log(await productManager.getProducts());
 
     // console.log(await productManager.getProductById(2));

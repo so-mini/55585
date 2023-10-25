@@ -1,1 +1,92 @@
-[{"id":1,"title":"Monstera Deliciosa","description":"This is a monstera.","price":30,"thumbnail":"monstera.jpg","code":"1A","stock":50},{"id":2,"title":"Pothos","description":"This is a pothos.","price":15,"thumbnail":"pothos.jpg","code":"2A","stock":50},{"id":3,"title":"Spider Plant","description":"This is a spider plant.","price":12,"thumbnail":"spider-plant.jpg","code":"3A","stock":50},{"id":4,"title":"Alocasia Frydek","description":"This is a frydek","price":60,"thumbnail":"frydek.jpg","code":"4A","stock":50},{"id":5,"title":"Hoya","description":"This is a hoya","price":40,"thumbnail":"hoya.jpg","code":"5A","stock":50},{"id":6,"title":"African Violet","description":"This is a African Violet.","price":45,"thumbnail":"African Violet.jpg","code":"6A","stock":50},{"id":7,"title":"Aloe","description":"This is an aloe plant.","price":5,"thumbnail":"aloe.jpg","code":"7A","stock":50},{"id":8,"title":"Anthurium","description":"This is an anthurium.","price":15,"thumbnail":"anthurium.jpg","code":"8A","stock":50},{"id":9,"title":"Asparagus Fern","description":"This is an Asparagus Fern","price":20,"thumbnail":"fern.jpg","code":"9A","stock":50},{"id":10,"title":"Banana Plant","description":"This is a banana plant","price":10,"thumbnail":"banana.jpg","code":"10A","stock":50}]
+[
+    {
+        "id": 1,
+        "title": "Monstera Adansonii",
+        "description": "This is a monstera adansonii.",
+        "price": 30,
+        "thumbnail": "monstera.jpg",
+        "code": "1A",
+        "stock": 50
+    },
+    {
+        "id": 2,
+        "title": "Pothos",
+        "description": "This is a pothos.",
+        "price": 15,
+        "thumbnail": "pothos.jpg",
+        "code": "2A",
+        "stock": 50
+    },
+    {
+        "id": 3,
+        "title": "Spider Plant",
+        "description": "This is a spider plant.",
+        "price": 12,
+        "thumbnail": "spider-plant.jpg",
+        "code": "3A",
+        "stock": 50
+    },
+    {
+        "id": 4,
+        "title": "Alocasia Frydek",
+        "description": "This is a frydek",
+        "price": 60,
+        "thumbnail": "frydek.jpg",
+        "code": "4A",
+        "stock": 50
+    },
+    {
+        "id": 5,
+        "title": "Hoya",
+        "description": "This is a hoya",
+        "price": 40,
+        "thumbnail": "hoya.jpg",
+        "code": "5A",
+        "stock": 50
+    },
+    {
+        "id": 6,
+        "title": "African Violet",
+        "description": "This is a African Violet.",
+        "price": 45,
+        "thumbnail": "African Violet.jpg",
+        "code": "6A",
+        "stock": 50
+    },
+    {
+        "id": 7,
+        "title": "Aloe",
+        "description": "This is an aloe plant.",
+        "price": 5,
+        "thumbnail": "aloe.jpg",
+        "code": "7A",
+        "stock": 50
+    },
+    {
+        "id": 8,
+        "title": "Anthurium",
+        "description": "This is an anthurium.",
+        "price": 15,
+        "thumbnail": "anthurium.jpg",
+        "code": "8A",
+        "stock": 50
+    },
+    {
+        "id": 9,
+        "title": "Asparagus Fern",
+        "description": "This is an Asparagus Fern",
+        "price": 20,
+        "thumbnail": "fern.jpg",
+        "code": "9A",
+        "stock": 50
+    },
+    {
+        "id": 10,
+        "title": "Banana Plant",
+        "description": "This is a banana plant",
+        "price": 10,
+        "thumbnail": "banana.jpg",
+        "code": "10A",
+        "stock": 50
+    }
+]
