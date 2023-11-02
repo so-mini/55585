@@ -43,7 +43,7 @@ router.post('/', async (req, res) => {
         }
 
         const products = await productManager.addProduct(title, description, price, thumbnail, code, stock);
-
+        
         return res.status(200).json({ success: true, message: 'Product was successfully updated.', products });
 
     } catch(e) {
@@ -75,8 +75,9 @@ router.delete('/:pid', async (req, res) => {
             return res.status(404).json({ success: false, message: 'Product not found.'})
         }
 
-        const deleteProduct = await productManager.deleteProduct(pid);
-        return res.status(200).json({ success: true, message: 'Product was successfully updated.', deleteProduct });
+        await productManager.deleteProduct(pid);
+        const products = await productManager.getProducts();
+        return res.status(200).json({ success: true, message: 'Product was successfully updated.', products });
 
     } catch(e) {
         res.status(500).send(`An error has occurred: ${e}`);

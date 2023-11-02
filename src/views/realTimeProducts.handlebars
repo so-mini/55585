@@ -1,0 +1,59 @@
+<h1>Available Products</h1>
+
+<div id="productListContainer">
+    {{#each products}}
+
+        <div>
+
+            <ul>
+                <li id="{{this.id}}">{{this.thumbnail}}</li>
+                <li id="{{this.id}}">Product: {{this.title}}</li>
+                <li id="{{this.id}}">Description: {{this.description}}</li>
+                <li id="{{this.id}}">Price: {{this.price}}</li>
+                <li id="{{this.id}}">Product Code: {{this.code}}</li>
+                <li id="{{this.id}}">Available Qty: {{this.stock}}</li>
+            </ul>
+
+            <button id="update" type="submit">Update Product</button>
+            <button class="deleteProduct" type="submit" data-product-id="{{this.id}}">Delete Product</button>
+
+        </div>
+
+    {{/each}}
+
+    <br>
+
+</div>
+
+<div id="newproduct">
+    <h2>Add New Product</h2>
+
+    <form id="productform">
+
+        <label for="thumbnail">Thumbnail:</label><br>
+        <input id="thumbnail" type="text" id="thumbnail" name="thumbnail"><br>
+
+        <label for="title">Product:</label><br>
+        <input id="title" type="text" id="title" name="title"><br>
+
+        <label for="description">Description:</label><br>
+        <input id="description" type="text" id="description" name="description"><br>
+
+        <label for="price">Price:</label><br>
+        <input id="price" type="number" id="price" name="price"><br>
+
+        <label for="code">Product Code:</label><br>
+        <input id="code" type="text" id="code" name="code"><br>
+
+        <label for="stock">Available Qty:</label><br>
+        <input id="stock" type="number" id="stock" name="stock"><br>
+
+        <br>
+
+        <button id="addProduct" type="submit">Add Product</button>
+
+    </form>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/index.js"></script>
